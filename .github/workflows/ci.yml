@@ -18,12 +18,16 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v4
           with:
-            path: e2e
-        - uses: actions/setup-node@v4
+            path: ./e2e
+        
+        - name: Install
+          uses: actions/setup-node@v4
           with:
             node-version: 18
-        - name: Install
+        - name: npm install
+          working-directory: ./e2e
           run: npm install
+          
         - name: Test
           run: npm run wdio
           continue-on-error: true
