@@ -18,7 +18,7 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v4
           with:
-            path: ./e2e
+            path: ../e2e
         
         - name: Install Node
           uses: actions/setup-node@v4
@@ -26,7 +26,7 @@ jobs:
             node-version: 18
         - name:  install dependencies
           run: npm install
-          working-directory: ./e2e
+          working-directory: ../e2e
           
           
         - name: Test
