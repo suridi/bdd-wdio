@@ -17,8 +17,7 @@ jobs:
     steps:
         - name: Checkout
           uses: actions/checkout@v4
-          with:
-            path: ../e2e
+        
         
         - name: Install Node
           uses: actions/setup-node@v4
