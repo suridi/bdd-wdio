@@ -30,6 +30,7 @@ jobs:
           
         - name: Test
           run: npm run wdio
+          working-directory: ./e2e
           continue-on-error: true
         - uses: actions/upload-artifact@v3
           with:
