@@ -5,3 +5,5 @@ reports/
 .vscode/
 *.log
 .env
+*.html
+*.txt
